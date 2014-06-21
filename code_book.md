@@ -89,93 +89,109 @@ The following steps have been taken to make the variable names readable:
 
 Final output file variables
 ---------------------------
-The following descriptions 
+All of the variables are the mean of the equivalent variable name in the raw data that have been averaged over each activity for each volunteer. Consequently there are 180 rows, 6 activities for each of the 30 volunteers.
+The following descriptions explain the variable naming convention.
+* The time domain signals have the prefix 't'.
+* If a variable is the result of a Fast Fourier Transform (FFT) it has the prefix 'f' for frequency domain.
+* The suffix describes the axis in which the accelerometer reading is taken i.e. x, y or z.
+* If the variable name contains 'mean' then it is the mean recorded variable. If it contains 'std' then it is the standard deviation of the recorded variable.
+* The acceleration signals are separated into 'body' and 'gravity' acceleration signals.
+* The presence of 'gyro' in a variable name implies it is an angular velocity.
+* The presence of 'jerk' in a variable name means it is associated to a Jerk reading.
+* 'mag' means that this is the magnitude of a variable.
 
-* activity - One of the six activities performed: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+For example:
+tbodyaccmeanx is the mean value of the time domain body acceleration signal in the x axis.
+
+fbodyaccjerkstdy is the  - mean value of the standard deviation of the FFT of acceleration signal in the y axis.
+
+The full list of 88 variables with corresponding activity and subjectid in the output file, meanData\_by\_activity_subjectid.txt, are:
+
+* activity - One of the six activities performed: WALKING, WALKING\_UPSTAIRS, WALKING\_DOWNSTAIRS, SITTING, STANDING, LAYING
 * subjectid - The unique numeric identifier of the volunteer; a number in the range 1-30.
-* tbodyaccmeanx - The mean value of the time domain body acceleration signal in the x axis.
-* tbodyaccmeany - The mean value of the time domain body acceleration signal in the y axis.
-* tbodyaccmeanz - The mean value of the time domain body acceleration signal in the z axis.
-* tgravityaccmeanx - 
-* tgravityaccmeany - 
-* tgravityaccmeanz - 
-* tbodyaccjerkmeanx - 
-* tbodyaccjerkmeany - 
-* tbodyaccjerkmeanz - 
-* tbodygyromeanx - 
-* tbodygyromeany - 
-* tbodygyromeanz - 
-* tbodygyrojerkmeanx - 
-* tbodygyrojerkmeany - 
-* tbodygyrojerkmeanz - 
-* tbodyaccmagmean - 
-* tgravityaccmagmean - 
-* tbodyaccjerkmagmean - 
-* tbodygyromagmean - 
-* tbodygyrojerkmagmean - 
-* fbodyaccmeanx - 
-* fbodyaccmeany - 
-* fbodyaccmeanz - 
-* fbodyaccmeanfreqx - 
-* fbodyaccmeanfreqy - 
-* fbodyaccmeanfreqz - 
-* fbodyaccjerkmeanx - 
-* fbodyaccjerkmeany - 
-* fbodyaccjerkmeanz - 
-* fbodyaccjerkmeanfreqx - 
-* fbodyaccjerkmeanfreqy - 
-* fbodyaccjerkmeanfreqz - 
-* fbodygyromeanx - 
-* fbodygyromeany - 
-* fbodygyromeanz - 
-* fbodygyromeanfreqx - 
-* fbodygyromeanfreqy - 
-* fbodygyromeanfreqz - 
-* fbodyaccmagmean - 
-* fbodyaccmagmeanfreq - 
-* fbodybodyaccjerkmagmean - 
-* fbodybodyaccjerkmagmeanfreq - 
-* fbodybodygyromagmean - 
-* fbodybodygyromagmeanfreq - 
-* fbodybodygyrojerkmagmean - 
-* fbodybodygyrojerkmagmeanfreq - 
-* angletbodyaccmeangravity - 
-* angletbodyaccjerkmeangravitymean - 
-* angletbodygyromeangravitymean - 
-* angletbodygyrojerkmeangravitymean - 
-* anglexgravitymean - 
-* angleygravitymean - 
-* anglezgravitymean - 
-* tbodyaccstdx - The mean value of the standard deviation of the time domain body acceleration signal in the x axis.
-* tbodyaccstdy - The mean value of the standard deviation of the time domain body acceleration signal in the y axis.
-* tbodyaccstdz - The mean value of the standard deviation of the time domain body acceleration signal in the z axis.
-* tgravityaccstdx - 
-* tgravityaccstdy - 
-* tgravityaccstdz - 
-* tbodyaccjerkstdx - 
-* tbodyaccjerkstdy - 
-* tbodyaccjerkstdz - 
-* tbodygyrostdx - 
-* tbodygyrostdy - 
-* tbodygyrostdz - 
-* tbodygyrojerkstdx - 
-* tbodygyrojerkstdy - 
-* tbodygyrojerkstdz - 
-* tbodyaccmagstd - 
-* tgravityaccmagstd - 
-* tbodyaccjerkmagstd - 
-* tbodygyromagstd - 
-* tbodygyrojerkmagstd - 
-* fbodyaccstdx - 
-* fbodyaccstdy - 
-* fbodyaccstdz - 
-* fbodyaccjerkstdx - 
-* fbodyaccjerkstdy - 
-* fbodyaccjerkstdz - 
-* fbodygyrostdx - 
-* fbodygyrostdy - 
-* fbodygyrostdz - 
-* fbodyaccmagstd - 
-* fbodybodyaccjerkmagstd - 
-* fbodybodygyromagstd - 
-* fbodybodygyrojerkmagstd - 
+* tbodyaccmeanx  
+* tbodyaccmeany 
+* tbodyaccmeanz  
+* tgravityaccmeanx  
+* tgravityaccmeany  
+* tgravityaccmeanz  
+* tbodyaccjerkmeanx 
+* tbodyaccjerkmeany  
+* tbodyaccjerkmeanz  
+* tbodygyromeanx  
+* tbodygyromeany  
+* tbodygyromeanz  
+* tbodygyrojerkmeanx  
+* tbodygyrojerkmeany  
+* tbodygyrojerkmeanz  
+* tbodyaccmagmean  
+* tgravityaccmagmean  
+* tbodyaccjerkmagmean  
+* tbodygyromagmean  
+* tbodygyrojerkmagmean  
+* fbodyaccmeanx  
+* fbodyaccmeany  
+* fbodyaccmeanz  
+* fbodyaccmeanfreqx  
+* fbodyaccmeanfreqy  
+* fbodyaccmeanfreqz  
+* fbodyaccjerkmeanx  
+* fbodyaccjerkmeany  
+* fbodyaccjerkmeanz  
+* fbodyaccjerkmeanfreqx  
+* fbodyaccjerkmeanfreqy  
+* fbodyaccjerkmeanfreqz  
+* fbodygyromeanx  
+* fbodygyromeany  
+* fbodygyromeanz  
+* fbodygyromeanfreqx  
+* fbodygyromeanfreqy  
+* fbodygyromeanfreqz  
+* fbodyaccmagmean  
+* fbodyaccmagmeanfreq  
+* fbodybodyaccjerkmagmean  
+* fbodybodyaccjerkmagmeanfreq  
+* fbodybodygyromagmean  
+* fbodybodygyromagmeanfreq  
+* fbodybodygyrojerkmagmean  
+* fbodybodygyrojerkmagmeanfreq  
+* angletbodyaccmeangravity  
+* angletbodyaccjerkmeangravitymean  
+* angletbodygyromeangravitymean  
+* angletbodygyrojerkmeangravitymean  
+* anglexgravitymean  
+* angleygravitymean  
+* anglezgravitymean  
+* tbodyaccstdx 
+* tbodyaccstdy 
+* tbodyaccstdz 
+* tgravityaccstdx  
+* tgravityaccstdy  
+* tgravityaccstdz  
+* tbodyaccjerkstdx  
+* tbodyaccjerkstdy  
+* tbodyaccjerkstdz  
+* tbodygyrostdx  
+* tbodygyrostdy  
+* tbodygyrostdz  
+* tbodygyrojerkstdx  
+* tbodygyrojerkstdy  
+* tbodygyrojerkstdz  
+* tbodyaccmagstd  
+* tgravityaccmagstd  
+* tbodyaccjerkmagstd  
+* tbodygyromagstd  
+* tbodygyrojerkmagstd  
+* fbodyaccstdx  
+* fbodyaccstdy  
+* fbodyaccstdz  
+* fbodyaccjerkstdx  
+* fbodyaccjerkstdy  
+* fbodyaccjerkstdz  
+* fbodygyrostdx  
+* fbodygyrostdy  
+* fbodygyrostdz  
+* fbodyaccmagstd  
+* fbodybodyaccjerkmagstd  
+* fbodybodygyromagstd  
+* fbodybodygyrojerkmagstd  
