@@ -87,91 +87,95 @@ The following steps have been taken to make the variable names readable:
 * Variable names converted to lowercase.
 * All punctuation marks including parenthesis and hyphens are removed from the variable names.
 
-[1] "activity"
-[1] "subjectid"
-[1] "tbodyaccmeanx"
-[1] "tbodyaccmeany"
-[1] "tbodyaccmeanz"
-[1] "tgravityaccmeanx"
-[1] "tgravityaccmeany"
-[1] "tgravityaccmeanz"
-[1] "tbodyaccjerkmeanx"
-[1] "tbodyaccjerkmeany"
-[1] "tbodyaccjerkmeanz"
-[1] "tbodygyromeanx"
-[1] "tbodygyromeany"
-[1] "tbodygyromeanz"
-[1] "tbodygyrojerkmeanx"
-[1] "tbodygyrojerkmeany"
-[1] "tbodygyrojerkmeanz"
-[1] "tbodyaccmagmean"
-[1] "tgravityaccmagmean"
-[1] "tbodyaccjerkmagmean"
-[1] "tbodygyromagmean"
-[1] "tbodygyrojerkmagmean"
-[1] "fbodyaccmeanx"
-[1] "fbodyaccmeany"
-[1] "fbodyaccmeanz"
-[1] "fbodyaccmeanfreqx"
-[1] "fbodyaccmeanfreqy"
-[1] "fbodyaccmeanfreqz"
-[1] "fbodyaccjerkmeanx"
-[1] "fbodyaccjerkmeany"
-[1] "fbodyaccjerkmeanz"
-[1] "fbodyaccjerkmeanfreqx"
-[1] "fbodyaccjerkmeanfreqy"
-[1] "fbodyaccjerkmeanfreqz"
-[1] "fbodygyromeanx"
-[1] "fbodygyromeany"
-[1] "fbodygyromeanz"
-[1] "fbodygyromeanfreqx"
-[1] "fbodygyromeanfreqy"
-[1] "fbodygyromeanfreqz"
-[1] "fbodyaccmagmean"
-[1] "fbodyaccmagmeanfreq"
-[1] "fbodybodyaccjerkmagmean"
-[1] "fbodybodyaccjerkmagmeanfreq"
-[1] "fbodybodygyromagmean"
-[1] "fbodybodygyromagmeanfreq"
-[1] "fbodybodygyrojerkmagmean"
-[1] "fbodybodygyrojerkmagmeanfreq"
-[1] "angletbodyaccmeangravity"
-[1] "angletbodyaccjerkmeangravitymean"
-[1] "angletbodygyromeangravitymean"
-[1] "angletbodygyrojerkmeangravitymean"
-[1] "anglexgravitymean"
-[1] "angleygravitymean"
-[1] "anglezgravitymean"
-[1] "tbodyaccstdx"
-[1] "tbodyaccstdy"
-[1] "tbodyaccstdz"
-[1] "tgravityaccstdx"
-[1] "tgravityaccstdy"
-[1] "tgravityaccstdz"
-[1] "tbodyaccjerkstdx"
-[1] "tbodyaccjerkstdy"
-[1] "tbodyaccjerkstdz"
-[1] "tbodygyrostdx"
-[1] "tbodygyrostdy"
-[1] "tbodygyrostdz"
-[1] "tbodygyrojerkstdx"
-[1] "tbodygyrojerkstdy"
-[1] "tbodygyrojerkstdz"
-[1] "tbodyaccmagstd"
-[1] "tgravityaccmagstd"
-[1] "tbodyaccjerkmagstd"
-[1] "tbodygyromagstd"
-[1] "tbodygyrojerkmagstd"
-[1] "fbodyaccstdx"
-[1] "fbodyaccstdy"
-[1] "fbodyaccstdz"
-[1] "fbodyaccjerkstdx"
-[1] "fbodyaccjerkstdy"
-[1] "fbodyaccjerkstdz"
-[1] "fbodygyrostdx"
-[1] "fbodygyrostdy"
-[1] "fbodygyrostdz"
-[1] "fbodyaccmagstd"
-[1] "fbodybodyaccjerkmagstd"
-[1] "fbodybodygyromagstd"
-[1] "fbodybodygyrojerkmagstd"
+Final output file variables
+---------------------------
+The following descriptions 
+
+* activity - One of the six activities performed: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+* subjectid - The unique numeric identifier of the volunteer; a number in the range 1-30.
+* tbodyaccmeanx - The mean value of the time domain body acceleration signal in the x axis.
+* tbodyaccmeany - The mean value of the time domain body acceleration signal in the y axis.
+* tbodyaccmeanz - The mean value of the time domain body acceleration signal in the z axis.
+* tgravityaccmeanx - 
+* tgravityaccmeany - 
+* tgravityaccmeanz - 
+* tbodyaccjerkmeanx - 
+* tbodyaccjerkmeany - 
+* tbodyaccjerkmeanz - 
+* tbodygyromeanx - 
+* tbodygyromeany - 
+* tbodygyromeanz - 
+* tbodygyrojerkmeanx - 
+* tbodygyrojerkmeany - 
+* tbodygyrojerkmeanz - 
+* tbodyaccmagmean - 
+* tgravityaccmagmean - 
+* tbodyaccjerkmagmean - 
+* tbodygyromagmean - 
+* tbodygyrojerkmagmean - 
+* fbodyaccmeanx - 
+* fbodyaccmeany - 
+* fbodyaccmeanz - 
+* fbodyaccmeanfreqx - 
+* fbodyaccmeanfreqy - 
+* fbodyaccmeanfreqz - 
+* fbodyaccjerkmeanx - 
+* fbodyaccjerkmeany - 
+* fbodyaccjerkmeanz - 
+* fbodyaccjerkmeanfreqx - 
+* fbodyaccjerkmeanfreqy - 
+* fbodyaccjerkmeanfreqz - 
+* fbodygyromeanx - 
+* fbodygyromeany - 
+* fbodygyromeanz - 
+* fbodygyromeanfreqx - 
+* fbodygyromeanfreqy - 
+* fbodygyromeanfreqz - 
+* fbodyaccmagmean - 
+* fbodyaccmagmeanfreq - 
+* fbodybodyaccjerkmagmean - 
+* fbodybodyaccjerkmagmeanfreq - 
+* fbodybodygyromagmean - 
+* fbodybodygyromagmeanfreq - 
+* fbodybodygyrojerkmagmean - 
+* fbodybodygyrojerkmagmeanfreq - 
+* angletbodyaccmeangravity - 
+* angletbodyaccjerkmeangravitymean - 
+* angletbodygyromeangravitymean - 
+* angletbodygyrojerkmeangravitymean - 
+* anglexgravitymean - 
+* angleygravitymean - 
+* anglezgravitymean - 
+* tbodyaccstdx - The mean value of the standard deviation of the time domain body acceleration signal in the x axis.
+* tbodyaccstdy - The mean value of the standard deviation of the time domain body acceleration signal in the y axis.
+* tbodyaccstdz - The mean value of the standard deviation of the time domain body acceleration signal in the z axis.
+* tgravityaccstdx - 
+* tgravityaccstdy - 
+* tgravityaccstdz - 
+* tbodyaccjerkstdx - 
+* tbodyaccjerkstdy - 
+* tbodyaccjerkstdz - 
+* tbodygyrostdx - 
+* tbodygyrostdy - 
+* tbodygyrostdz - 
+* tbodygyrojerkstdx - 
+* tbodygyrojerkstdy - 
+* tbodygyrojerkstdz - 
+* tbodyaccmagstd - 
+* tgravityaccmagstd - 
+* tbodyaccjerkmagstd - 
+* tbodygyromagstd - 
+* tbodygyrojerkmagstd - 
+* fbodyaccstdx - 
+* fbodyaccstdy - 
+* fbodyaccstdz - 
+* fbodyaccjerkstdx - 
+* fbodyaccjerkstdy - 
+* fbodyaccjerkstdz - 
+* fbodygyrostdx - 
+* fbodygyrostdy - 
+* fbodygyrostdz - 
+* fbodyaccmagstd - 
+* fbodybodyaccjerkmagstd - 
+* fbodybodygyromagstd - 
+* fbodybodygyrojerkmagstd - 
