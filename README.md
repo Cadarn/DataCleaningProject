@@ -23,4 +23,4 @@ The project takes all of the raw data taken from 30 volunteers performing six di
 4. An output file, meanData_by_activity_subjectid.txt, will be produced; see the codebook for a detailed desciption of the file contents.
 
 # Codebook
-The codebook,  code\_book.md in this repository, contains a detailed description of all variables. 
+The codebook, code\_book.md in this repository, contains a detailed description of all variables. 
