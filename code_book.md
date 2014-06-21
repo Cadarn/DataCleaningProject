@@ -101,9 +101,8 @@ The following descriptions explain the variable naming convention.
 * 'mag' means that this is the magnitude of a variable.
 
 For example:
-tbodyaccmeanx is the mean value of the time domain body acceleration signal in the x axis.
-
-fbodyaccjerkstdy is the  - mean value of the standard deviation of the FFT of acceleration signal in the y axis.
+1. tbodyaccmeanx is the mean value of the time domain body acceleration signal in the x axis.
+2. fbodyaccjerkstdy is the mean value of the standard deviation of the FFT of acceleration signal in the y axis.
 
 The full list of 88 variables with corresponding activity and subjectid in the output file, meanData\_by\_activity_subjectid.txt, are:
 
